@@ -98,8 +98,8 @@ function printPlanets(planets) {
     stats.dataSize += JSON.stringify(planets).length;
     console.log("\nLarge populated planets:");
     planets.results
-        .filter(p => parseInt(p.population, 10) > MIN_POPULATION &&
-                     parseInt(p.diameter, 10) > MIN_DIAMETER)
+        .filter(planets => parseInt(planets.population, 10) > MIN_POPULATION &&
+                     parseInt(planets.diameter, 10) > MIN_DIAMETER)
         .forEach(p => console.log(`${p.name} - Pop: ${p.population}, ` +
             `Diameter: ${p.diameter}, Climate: ${p.climate}`));
 }
