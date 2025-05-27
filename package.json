@@ -4,7 +4,6 @@
   "main": "swapi.js",
   "scripts": {
     "lint": "eslint ."
-  
   },
   "keywords": [],
   "author": "",
